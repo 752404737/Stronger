@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mydemolist_top"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        >
+
+        <Button
+            android:id="@+id/mydemolist_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+            android:text="@string/mydemolist_back"
+            android:textSize="21sp"/>
+
+        <Button
+            android:id="@+id/mydemolist_changhe"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:text="@string/mydemolist_change"
+            android:textSize="21sp"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="你的身高："
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/input_shengao"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="你的体重："
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/input_tizhong"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="身体素质："
+                android:textSize="19sp"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:hint="以10分为满分打分"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="健身目的："
+                android:textSize="19sp"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:hint="例如减肥/增肥/瘦腰…"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/mydemolist"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"></ListView>
+
+        <Button
+            android:id="@+id/md_see"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="#000000"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+</LinearLayout>

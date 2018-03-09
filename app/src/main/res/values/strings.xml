@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Stronger</string>
+    <string name="mydemolist_back">"返回"</string>
+    <string name="mydemolist_change">"确定"</string>
+</resources>
